@@ -18,6 +18,7 @@ Here is a list of specific knowledge base demonstrated in this repository.
 - General Android SDK
 
 ######TIME FOR IMPLEMENTATION
-This project was executed in two days.
+This project was executed in TWO DAYS.
+
 Most of the time was spent trying to make the download of friends_list from Facebook until I realized the API was no longer supported and FACEBOOK documentation was not updated. Since time was limited, I wasn't able to handle user list in an appropriate SQL database and leave one service responsible to maintain it updated. Instead, the list is downloaded when user log into Facebook and will only refresh if the user logout or in case the application is closed (not only the activity).
 I think the code documentation is also poor and for sure I would do several things differently after playing a little bit more with Facebook APIs, but this was a good "first shot" based on time restrictions.
