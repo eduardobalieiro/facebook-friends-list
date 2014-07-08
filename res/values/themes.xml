@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- the theme applied to the application or activity -->
+    <style name="DarkBalieiroTheme" parent="android:style/Theme.Holo">
+        <item name="android:windowActionBarOverlay">true</item>
+		<item name="android:windowBackground">@drawable/main_background</item>
+		<item name="android:listViewStyle">@style/BalieiroListView</item>
+		<item name="android:actionBarStyle">@style/BalieiroActionBar</item>
+		<item name="android:shadowColor">@color/gray</item>
+		<item name="android:shadowDx">2</item>
+		<item name="android:shadowDy">2</item>
+		<item name="android:shadowRadius">2</item>
+		
+    </style>
+
+    <style name="BalieiroActionBar"
+           parent="android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@drawable/top_bar_background</item>
+        <item name="android:titleTextStyle">@style/BalieiroActionBarTitleText</item>
+    </style>
+    
+    <!-- ActionBar title text -->
+    <style name="BalieiroActionBarTitleText"
+           parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textSize">22sp</item>
+    </style>
+    
+    <style name="BalieiroListView" parent="@android:style/Widget.ListView">
+  		<item name="android:background">@color/transparent</item>
+  		<item name="android:divider">@color/transparent</item>
+	    <item name="android:dividerHeight">0dp</item>
+	    <item name="android:drawSelectorOnTop">false</item>
+	</style>
+
+
+</resources>
