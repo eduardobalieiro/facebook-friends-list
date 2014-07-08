@@ -7,6 +7,8 @@ Before proceeding it is very important to mention that any application created a
 To bypass this limitation and see the application running, you need to add yourself as a tester for this application.
 * Facebook APP_ID: 499735953492138
 
+Before the version _2.0_, the friends_list could be downloaded using BATCH operations and FQL, which included support for partial list download and sorting method. [Here](https://developers.facebook.com/docs/graph-api/reference/v2.0/user/taggable_friends) is the only way I was successful in downloading the list.
+
 ######KNOWLEDGE BASE
 Here is a list of specific knowledge base demonstrated in this repository.
 - ListView and ListAdapter concepts
