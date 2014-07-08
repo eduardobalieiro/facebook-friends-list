@@ -4,6 +4,9 @@ This project was created to demonstrate one of the ways to connect your Android 
 ######FACEBOOK API LIMITATION
 Before proceeding it is very important to mention that any application created after _April_ _30th_ _2014_ uses version _2.0_ of the API, which means that full friends_list download is no longer supported. The entire discussion around this can be found [here.](https://developers.facebook.com/bugs/1502515636638396)
 
+To bypass this limitation and see the application running, you need to add yourself as a tester for this application.
+* Facebook APP_ID: 499735953492138
+
 ######KNOWLEDGE BASE
 Here is a list of specific knowledge base demonstrated in this repository.
 - ListView and ListAdapter concepts
