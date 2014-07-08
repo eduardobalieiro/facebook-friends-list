@@ -1,3 +1,12 @@
+/*
+ * ----------------------------------------------------------------------------
+ * "THE BEER-WARE LICENSE" (Revision 423):
+ * <balieiro@kajoo.com.br> wrote this file. As long as you retain this notice you
+ * can do whatever you want with this stuff. If we meet some day, and you think
+ * this stuff is worth it, you can buy me a beer in return.
+ * ----------------------------------------------------------------------------
+ */
+
 package com.balieiro.facebook;
 
 import java.util.ArrayList;
@@ -12,7 +21,6 @@ import com.facebook.model.GraphObject;
 
 import android.app.Application;
 import android.content.Context;
-import android.os.Bundle;
 
 public class MyFacebookApp extends Application {
 

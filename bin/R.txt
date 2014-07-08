@@ -139,14 +139,14 @@ int id com_facebook_usersettingsfragment_login_button 0x7f04001c
 int id com_facebook_usersettingsfragment_logo_image 0x7f04001a
 int id com_facebook_usersettingsfragment_profile_name 0x7f04001b
 int id fragment 0x7f040023
-int id friend_image 0x7f040020
+int id friend_image 0x7f040021
 int id friend_name 0x7f04001e
-int id instructions 0x7f040021
 int id large 0x7f040002
 int id list_view 0x7f04001f
 int id normal 0x7f040001
 int id photo_layout 0x7f04001d
 int id picker_subtitle 0x7f040012
+int id progress_layout 0x7f040020
 int id small 0x7f040000
 int layout com_facebook_friendpickerfragment 0x7f030000
 int layout com_facebook_login_activity_layout 0x7f030001
@@ -172,7 +172,7 @@ int layout welcome_launcher 0x7f030014
 int menu main_activity_actions 0x7f090000
 int string app_id 0x7f07001c
 int string app_name 0x7f07001a
-int string clear_cache 0x7f07001e
+int string clear_cache 0x7f07001f
 int string com_facebook_choose_friends 0x7f07000f
 int string com_facebook_dialogloginactivity_ok_button 0x7f070000
 int string com_facebook_internet_permission_error_message 0x7f070013
@@ -200,6 +200,7 @@ int string com_facebook_usersettingsfragment_log_in_button 0x7f070008
 int string com_facebook_usersettingsfragment_logged_in 0x7f070009
 int string com_facebook_usersettingsfragment_not_logged_in 0x7f07000a
 int string instructions 0x7f07001b
+int string loading 0x7f07001e
 int string logout 0x7f07001d
 int style BalieiroActionBar 0x7f080004
 int style BalieiroActionBarTitleText 0x7f080005

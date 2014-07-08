@@ -4,6 +4,7 @@
     <string name="instructions">Login to verify why you should hire Eduardo Balieiro</string>
     <string name="app_id">499735953492138</string>
     <string name="logout">Logout</string>
+    <string name="loading">Fetching friends list from Facebook</string>
     <string name="clear_cache">Clear cache</string>
 
 </resources>

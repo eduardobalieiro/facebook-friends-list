@@ -1,14 +1,23 @@
+/*
+ * ----------------------------------------------------------------------------
+ * "THE BEER-WARE LICENSE" (Revision 423):
+ * <balieiro@kajoo.com.br> wrote this file. As long as you retain this notice you
+ * can do whatever you want with this stuff. If we meet some day, and you think
+ * this stuff is worth it, you can buy me a beer in return.
+ * ----------------------------------------------------------------------------
+ */
+
 package com.balieiro.facebook;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.AbsListView.OnScrollListener;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import com.facebook.Request;
@@ -17,14 +26,23 @@ import com.facebook.Session;
 
 public class FriendsListFragment extends Fragment {
 	
+	// This is the amount of items we will load each time user gets closer to the 
+	// end of the list.
 	private static final int BATCH_SIZE = 20;
+	
+	// This is the limit specified in our list to start loading the next batch of
+	// items.
+	protected static final int LAZY_LOAD_LIMIT = 5;
+	
 	private FriendsListAdapter mAdapter = new FriendsListAdapter(this);
+	private LinearLayout mProgress;
 
 	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.friends_list_fragment, container, false);
 		ListView list = (ListView) view.findViewById(R.id.list_view);
 		list.setAdapter(mAdapter);
+		mProgress = (LinearLayout) view.findViewById(R.id.progress_layout);
 
 		
         list.setOnScrollListener(new OnScrollListener(){
@@ -32,9 +50,9 @@ public class FriendsListFragment extends Fragment {
 			public void onScroll(AbsListView view, int firstVisibleItem,
 					int visibleItemCount, int totalItemCount) {
 				// Load more items in the bottom of this list in case user is 
-				// reaching close to the end.
-				if (totalItemCount - (firstVisibleItem + visibleItemCount) < 5 && 
-						totalItemCount > 0){
+				// close to the end.
+				if (totalItemCount - (firstVisibleItem + visibleItemCount) < 
+						LAZY_LOAD_LIMIT && totalItemCount > 0){
 					loadItems();
 				}
 			}
@@ -91,6 +109,8 @@ public class FriendsListFragment extends Fragment {
 				break;
 		}
 		mAdapter.notifyDataSetChanged();
+		mProgress.setVisibility(View.GONE);
+		
 	}
 	@Override
 	public void onPause(){

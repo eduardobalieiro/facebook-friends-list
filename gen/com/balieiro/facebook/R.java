@@ -280,14 +280,14 @@ containing a value of this type.
         public static final int com_facebook_usersettingsfragment_logo_image=0x7f04001a;
         public static final int com_facebook_usersettingsfragment_profile_name=0x7f04001b;
         public static final int fragment=0x7f040023;
-        public static final int friend_image=0x7f040020;
+        public static final int friend_image=0x7f040021;
         public static final int friend_name=0x7f04001e;
-        public static final int instructions=0x7f040021;
         public static final int large=0x7f040002;
         public static final int list_view=0x7f04001f;
         public static final int normal=0x7f040001;
         public static final int photo_layout=0x7f04001d;
         public static final int picker_subtitle=0x7f040012;
+        public static final int progress_layout=0x7f040020;
         public static final int small=0x7f040000;
     }
     public static final class layout {
@@ -319,7 +319,7 @@ containing a value of this type.
     public static final class string {
         public static final int app_id=0x7f07001c;
         public static final int app_name=0x7f07001a;
-        public static final int clear_cache=0x7f07001e;
+        public static final int clear_cache=0x7f07001f;
         public static final int com_facebook_choose_friends=0x7f07000f;
         public static final int com_facebook_dialogloginactivity_ok_button=0x7f070000;
         public static final int com_facebook_internet_permission_error_message=0x7f070013;
@@ -347,6 +347,7 @@ containing a value of this type.
         public static final int com_facebook_usersettingsfragment_logged_in=0x7f070009;
         public static final int com_facebook_usersettingsfragment_not_logged_in=0x7f07000a;
         public static final int instructions=0x7f07001b;
+        public static final int loading=0x7f07001e;
         public static final int logout=0x7f07001d;
     }
     public static final class style {
